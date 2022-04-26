@@ -63,47 +63,44 @@
            </button>
 
            <h2 class="modal-form-name">Оставьте свои данные, мы вам перезвоним</h2>
-           <form class="modal-form">
-            
-              <label for="name" class="label-modal-form">Имя</label>
-              <div class="modal-conteiner">
-             <input type="text" name="name" id="name" class="input-modal-form" />
-             <span class="modal-icon">
-               <svg class="icon-modal-svg" width="18" height="18">
-                 <use href="./images/icons.svg#icon-person-modal"></use>
-                </svg>
-              </span>
-            </div>
-             
-               <label for="tel" class="label-modal-form">Телефон</label>
-               <div class="modal-conteiner">
-             <input type="tel" name="tel" id="tel" class="input-modal-form">
-             <span class="modal-icon">
-               <svg class="icon-modal-svg" width="18" height="18">
-                 <use href="./images/icons.svg#icon-phone-modal"></use>
-                </svg>
-              </span>
-             </div>
-               
-               <label for="email" class="label-modal-form">Почта</label>
-               <div class="modal-conteiner">
-             <input type="email" name="email" id="email" class="input-modal-form">
-             <span class="modal-icon">
-               <svg class="icon-modal-svg" width="18" height="18">
-                 <use href="./images/icons.svg#icon-email-modal"></use>
-                </svg>
-              </span>
-             </div>
-
-             <label for="comment" class="label-modal-form">Комментарий</label>
-             <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="input-modal-form comment-modal"></textarea>
-
-             <div class="checkbox-container">
-             <input type="checkbox" name="agreement" id="agreement" class="label-checkbox-modal">
-             <label for="agreement" class="input-checkbox-modal">Соглашаюсь с рассылкой и принимаю <a href="" class="link-modal">Условия договора</a> </label>
-             </div>
-             <button type="submit" class="button-modal">Отправить</button>
-           </form>
+          <form class="modal-form">
+              <span class="label-modal-form">Имя</span>
+              <label class="modal-conteiner">
+                  <input type="text" name="name" placeholder=" " class="input-modal-form"/>
+                  <svg class="icon-modal-svg" width="18" height="18">
+                      <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+              </label>
+              <span class="label-modal-form">Телефон</span>
+              <label class="modal-conteiner">
+                  <input type="tel" name="tel" placeholder=" " class="input-modal-form"/>
+                  <svg class="icon-modal-svg" width="18" height="18">
+                      <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+              </label>
+              <span class="label-modal-form">Почта</span>
+              <label class="modal-conteiner">
+                  <input type="email" name="mail" placeholder=" " class="input-modal-form"/>
+                  <svg class="icon-modal-svg" width="18" height="18">
+                      <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+              </label>
+              <span class="label-modal-form">Комментарий</span>
+              <label class="modal-conteiner">
+                  <textarea class="comment-modal input-modal-form" name="comment" rows="10" placeholder="Введите текст"></textarea>
+              </label>
+              <label class="checkbox-container">
+                  <input type="checkbox" name="policy" class="input-checkbox-modal"/>
+                  <svg class="checkbox-icon" width="16" height="15">
+                      <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                  <span class="label-checkbox-modal">Соглашаюсь с рассылкой и принимаю
+                  <a href="./index.html" class="link-modal" target="_blank" rel="noopener noreferrer nofolow"
+                      aria-label="conditions of the contract">Условия договора
+                  </a></span>
+              </label>
+              <button type="submit" class="button-modal">Отправить</button>
+        </form>
          </div>
        </div>
       </div>

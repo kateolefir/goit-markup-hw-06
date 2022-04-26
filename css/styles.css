@@ -286,12 +286,13 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transform: translate(-8px, 8px);
-  transition: background-color var(--time-animation) var(--timing-function);
+  transition: fill var(--time-animation) var(--timing-function);
 }
 
 .modal-close:hover,
 .modal-close:focus {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .modal-form-name {
@@ -310,6 +311,7 @@ a {
   flex-direction: column;
   margin: 0 40px 40px 40px;
 }
+
 .modal-conteiner {
   position: relative;
 
@@ -322,6 +324,7 @@ a {
   left: 12px;
 
   display: inline-block;
+  transition: fill var(--time-animation) var(--timing-function);
 }
 
 .label-modal-form {
@@ -340,13 +343,37 @@ a {
   margin-bottom: 10px;
 
   border: 1px solid var(--input-modal-form-border);
+  background-color: var(--primary-white-color);
   border-radius: 4px;
 
   padding-left: 42px;
+
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  cursor: pointer;
+
+  transition: border-color var(--time-animation) var(--timing-function);
 }
 
 .input-modal-form:last-child {
   margin-bottom: 0px;
+}
+
+.modal-conteiner:focus-within > .icon-modal-svg {
+  fill: var(--accent-color);
+}
+
+.modal-conteiner:hover > .icon-modal-svg {
+  fill: var(--accent-color);
+}
+
+.input-modal-form:focus,
+.input-modal-form:hover {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .comment-modal {
@@ -360,9 +387,66 @@ a {
 .comment-modal::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+
 .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
+
+.label-checkbox-modal {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.link-modal {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  transition: border-bottom var(--time-animation) var(--timing-function),
+    font-weight var(--time-animation) var(--timing-function);
+}
+
+.link-modal:focus {
+  border-bottom: 2px solid var(--accent-color);
+  font-weight: bold;
+  outline: none;
+}
+.input-checkbox-modal {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+
+  border-radius: 2px;
+  border: 2px solid var(--primary-title-color);
+
+  margin-right: 8.38px;
+
+  cursor: pointer;
+
+  transition: border-color var(--time-animation) var(--timing-function),
+    background-color var(--time-animation) var(--timing-function);
+}
+.input-checkbox-modal:focus + .checkbox-icon {
+  border-color: var(--accent-color);
+}
+.input-checkbox-modal:checked:focus + .checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+}
+
 .button-modal {
   width: 200px;
   height: 55px;
@@ -380,27 +464,17 @@ a {
   text-align: center;
   color: var(--primary-white-color);
 
+  cursor: pointer;
+
   transition: text-shadow var(--time-animation) var(--timing-function);
 }
 
 .button-modal:hover,
 .button-modal:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
-.input-checkbox-modal {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.01em;
-  text-align: left;
-
-  margin-bottom: 4px;
-}
-.link-modal {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
 /*----особливості "Студия"----*/
 .features .title {
   color: var(--primary-title-color);
