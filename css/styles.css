@@ -414,7 +414,7 @@ a {
 
 .link-modal:focus {
   border-bottom: 2px solid var(--accent-color);
-  font-weight: bold;
+  font-weight: 400;
   outline: none;
 }
 .input-checkbox-modal {
@@ -439,9 +439,7 @@ a {
   transition: border-color var(--time-animation) var(--timing-function),
     background-color var(--time-animation) var(--timing-function);
 }
-.input-checkbox-modal:focus + .checkbox-icon {
-  border-color: var(--accent-color);
-}
+
 .input-checkbox-modal:checked:focus + .checkbox-icon {
   border-color: transparent;
   background-color: var(--accent-color);
@@ -886,4 +884,102 @@ address .contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-social-icon-list {
+  margin-right: 93px;
+}
+
+.footer-form {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title-form {
+  margin-bottom: 20px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  text-align: left;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.input-email-form {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: var(--bg-footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  transition: box-shadow var(--time-animation) var(--timing-function);
+}
+
+.input-email-form:hover,
+.input-email-form:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.input-email-form::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-email-form-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--time-animation) var(--timing-function);
+}
+
+.footer-form-icon {
+  display: block;
+  margin: 13px 0 13px 10px;
+  fill: currentColor;
+}
+
+.footer-email-form-button:hover,
+.footer-email-form-button:focus {
+  background-color: rgba(255, 255, 255, 0.1);
 }
