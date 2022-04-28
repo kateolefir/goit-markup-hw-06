@@ -296,7 +296,7 @@ a {
 }
 
 .modal-form-name {
-  margin: 40px 39px 12px 41px;
+  margin-bottom: 12px;
 
   color: var(--primary-title-color);
   font-family: Roboto, sans-serif;
@@ -306,16 +306,17 @@ a {
   text-align: center;
 }
 
+.hero-modal {
+  padding: 40px;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin: 0 40px 40px 40px;
 }
 
 .modal-conteiner {
   position: relative;
-
-  margin-bottom: 10px;
 }
 
 .icon-modal-svg {
@@ -356,10 +357,6 @@ a {
   cursor: pointer;
 
   transition: border-color var(--time-animation) var(--timing-function);
-}
-
-.input-modal-form:last-child {
-  margin-bottom: 0px;
 }
 
 .modal-conteiner:focus-within > .icon-modal-svg {
@@ -452,7 +449,7 @@ a {
   border-color: transparent;
   border-radius: 4px;
 
-  margin: 0 124px 4px 124px;
+  margin: auto;
 
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -887,7 +884,7 @@ address .contacts {
 }
 
 .footer-social-icon-list {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-form {
@@ -975,7 +972,7 @@ address .contacts {
 
 .footer-form-icon {
   display: block;
-  margin: 13px 0 13px 10px;
+  margin-left: 10px;
   fill: currentColor;
 }
 
